@@ -1,0 +1,4 @@
+description = "Declarative definition of command line interfaces for OCaml"
+version = "0.9.8"
+archive(byte) = "cmdliner.cma"
+archive(native) = "cmdliner.cmxa"
