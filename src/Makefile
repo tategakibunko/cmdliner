@@ -3,12 +3,11 @@ VERSION:=0.9.8
 DESCRIPTION:=Declarative definition of command line interfaces for OCaml
 REQUIRES:=
 OPT:=ocamlfind ocamlopt -g
-OPT:=ocamlfind ocamlopt -g
 OCAMLC:=ocamlfind ocamlc -g 
 LIBSRC:=\
 	cmdliner.mli cmdliner.ml
 
-all: cmdliner.cma cmdliner.cmxa
+all: META cmdliner.cma cmdliner.cmxa
 
 cmdliner.cma: cmdliner.mli cmdliner.ml
 	$(OCAMLC) -o $@ -a $(LIBSRC)
